@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "seguridadapp",
+    "slug": "seguridadapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.seguridadapp",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to take photos for event records.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to upload photos for events."
+      }
+    },
+    "android": {
+      "package": "com.yourcompany.seguridadapp",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
